@@ -76,7 +76,7 @@ X_train_test_activities <- cbind(Y_train_test, subject_train_test, X_train_test,
                                  total_acc_x_train_test, total_acc_y_train_test, total_acc_z_train_test
 )
 
-##### 5. Tiday data set with average of each variable for each activity and subject
+##### 5. Tidy data set with average of each variable for each activity and subject
 tidy_df <- X_train_test_activities %>% group_by(Activity, Subject) %>% summarize_all(funs(mean))
 
 write.table(tidy_df, file="assignment_output.txt", row.names = FALSE)
