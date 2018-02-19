@@ -1,0 +1,2 @@
+I used the variable names provided in the features.txt and make it computer friendly (removing special characters).  
+I also added my own variable names that are descriptive for the detailed data set - the names are based on the description in README.txt file and features_info.txt file.
