@@ -69,15 +69,7 @@ colnames(body_gyro_z_train_test) <- lapply(rep(1:128, length(128)), function(x) 
 colnames(total_acc_x_train_test) <- lapply(rep(1:128, length(128)), function(x) paste0("Body Acceleration X-Axis Vector ", x, " (Gravity-Total Acc.)"))
 colnames(total_acc_y_train_test) <- lapply(rep(1:128, length(128)), function(x) paste0("Body Acceleration Y-Axis Vector ", x, " (Gravity-Total Acc.)"))
 colnames(total_acc_z_train_test) <- lapply(rep(1:128, length(128)), function(x) paste0("Body Acceleration Z-Axis Vector ", x, " (Gravity-Total Acc.)"))
-#body_acc_x_train_test <- cbind(subject_train_test, Y_train_test, body_acc_x_train_test)
-#body_acc_y_train_test <- cbind(subject_train_test, Y_train_test, body_acc_y_train_test)
-#body_acc_z_train_test <- cbind(subject_train_test, Y_train_test, body_acc_z_train_test)
-#body_gyro_x_train_test <- cbind(subject_train_test, Y_train_test, body_gyro_x_train_test)
-#body_gyro_y_train_test <- cbind(subject_train_test, Y_train_test, body_gyro_y_train_test)
-#body_gyro_z_train_test <- cbind(subject_train_test, Y_train_test, body_gyro_z_train_test)
-#total_acc_x_train_test <- cbind(subject_train_test, Y_train_test, total_acc_x_train_test)
-#total_acc_y_train_test <- cbind(subject_train_test, Y_train_test, total_acc_y_train_test)
-#total_acc_z_train_test <- cbind(subject_train_test, Y_train_test, total_acc_z_train_test)
+
 X_train_test_activities <- cbind(Y_train_test, subject_train_test, X_train_test, 
                                  body_acc_x_train_test, body_acc_y_train_test, body_acc_z_train_test, 
                                  body_gyro_x_train_test, body_gyro_y_train_test, body_gyro_z_train_test,
